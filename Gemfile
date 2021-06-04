@@ -3,19 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
-# Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
-# Use Puma as the app server
 gem 'puma', '~> 5.0'
-# Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
-# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
@@ -33,6 +26,15 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+
+
+#ADDED GEM: Make errors look better ----------------------------------
+gem 'better_errors', '~> 2.9', '>= 2.9.1'
+#ADDED GEM: Bootstrap type thing----------------------------------
+gem 'bulma-rails', '~> 0.9.1'
+#ADDED GEM:           -------------------------------------
+gem 'simple_form', '~> 5.1'
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
@@ -42,6 +44,10 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  #ADDED GEM:           -------------------------------------
+  gem 'guard', '~> 2.17'
+  #ADDED GEM:           -------------------------------------
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :test do
