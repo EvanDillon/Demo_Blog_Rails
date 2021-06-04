@@ -8,6 +8,12 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
+  #I added this to try and fix better_errors -----------------------------
+  # BetterErrors::Middleware.allow_ip! "10.0.2.2"
+
+
+
+
   # Do not eager load code on boot.
   config.eager_load = false
 

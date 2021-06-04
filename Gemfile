@@ -28,8 +28,7 @@ end
 
 
 
-#ADDED GEM: Make errors look better ----------------------------------
-gem 'better_errors', '~> 2.9', '>= 2.9.1'
+
 #ADDED GEM: Bootstrap type thing----------------------------------
 gem 'bulma-rails', '~> 0.9.1'
 #ADDED GEM:           -------------------------------------
@@ -47,7 +46,11 @@ group :development do
   #ADDED GEM:           -------------------------------------
   gem 'guard', '~> 2.17'
   #ADDED GEM:           -------------------------------------
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', require: false
+  #ADDED GEM: Make errors look better ----------------------------------
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  gem "binding_of_caller"
+
 end
 
 group :test do
